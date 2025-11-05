@@ -1,0 +1,17 @@
+[package]
+name = "rpomodoro"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A terminal-based Pomodoro timer"
+license = "MIT"
+
+[dependencies]
+crossterm = "0.27"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "5.0"
+
+[[bin]]
+name = "rpomodoro"
+path = "src/main.rs"
